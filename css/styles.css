@@ -1,0 +1,190 @@
+:root{
+    --font-mono: ul-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe Mono',
+    'Roboto Mono', 'Oxigen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    --transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1) 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos para la barra de navegacion*/
+.navbar{
+    background: black;
+    padding: 10px 10px;
+
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar li{
+    float: left;
+}
+.navbar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 86px;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    background-color: blueviolet;
+}
+
+@media only screen and (max-width: 768px){
+    .navbar ul{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .navbar ul.show{
+        display: block;
+    }
+    .navbar li {
+        float: none;
+    }
+    
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+section h1{
+    font-size: 3rem;
+}
+section h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+section form{
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 2px solid rgb(0,0,0,1);
+}
+section form label{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5  rem;
+}
+section form input{
+    width: 100%;
+    margin-bottom: 0.5em;
+    padding: 1rem;
+    border-radius: 9px;
+    border: none;
+    outline-color: violet;
+    background-color: gainsboro;
+}
+section form input[type="submit"]{
+    margin-top: 1.5rem;
+    background-color: blueviolet;
+    color: gainsboro;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+}
+section form input[type="submit"]:active{
+    transform: scale(0.97);
+}
+section p{
+    margin-top: 1.5em;
+}
+section p a{
+    text-decoration: none;
+    color: blue;
+}
+/*home*/
+section button{
+    background-color: blueviolet;
+    color: aliceblue;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 9px;
+    margin-top: 1.5em;
+    font-size: 1em;
+}
+
+/*index*/
+    body{
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    color: black;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-icon img {
+    width: 280px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+    margin-right: 10px; /* Margen derecho para separar la imagen del texto */
+    
+}
+
+
+
+.contenedor{
+    display: flex;
+}
+
+
+.imagen{
+    margin-left: 5px;/*ajusta el margen derecho para separar loselementos*/
+    border-radius: 40px ;
+}
+
+.home, h3{
+    margin: 0;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos para el botón */
+#salir {
+    position: fixed; /* Fija el botón en la esquina inferior derecha de la ventana del navegador */
+    bottom: 20px; /* Espacio de 20px desde el borde inferior */
+    right: 20px; /* Espacio de 20px desde el borde derecho */
+    padding: 10px 20px; /* Ajusta el espaciado interno del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Añade esquinas redondeadas al botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
+}
+
+#salir:hover {
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el cursor sobre el botón */
+}
+
+

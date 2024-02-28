@@ -1,0 +1,10 @@
+const sqlite3 = require('sqlite3').verbose();
+
+// Abrir una conexión a la base de datos
+const db = new sqlite3.Database('C:\Users\aleja\Downloads\sqlite-dll-win-x64-3450100');
+
+// Ejecutar una consulta para crear una tabla
+db.run('CREATE TABLE usuarios (id INTEGER PRIMARY KEY, nombre TEXT, edad INTEGER)');
+
+// Cerrar la conexión cuando hayas terminado
+db.close();

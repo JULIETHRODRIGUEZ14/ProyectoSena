@@ -1,0 +1,189 @@
+[debug] [2024-02-28T02:34:14.980Z] ----------------------------------------------------------------------
+[debug] [2024-02-28T02:34:14.982Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aleja\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-28T02:34:14.983Z] CLI Version:   13.4.0
+[debug] [2024-02-28T02:34:14.983Z] Platform:      win32
+[debug] [2024-02-28T02:34:14.983Z] Node Version:  v18.16.0
+[debug] [2024-02-28T02:34:14.984Z] Time:          Tue Feb 27 2024 21:34:14 GMT-0500 (hora estándar de Colombia)
+[debug] [2024-02-28T02:34:14.984Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-28T02:34:14.991Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-28T02:34:14.992Z] > authorizing via signed-in user (rodriguezalejitta@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\aleja\OneDrive\Escritorio\ProyectoSena
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-28T02:36:13.018Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-02-28T02:36:13.679Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-02-28T02:36:13.680Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project proyecto-sena-77126 (Proyecto Sena) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-02-28T02:36:17.664Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-02-28T02:36:17.664Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/proyecto-sena-77126
+[debug] [2024-02-28T02:36:18.469Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com 200
+[debug] [2024-02-28T02:36:18.469Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-02-28T02:36:18.473Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-02-28T02:36:18.473Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/proyecto-sena-77126
+[debug] [2024-02-28T02:36:19.702Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-02-28T02:36:19.703Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-02-28T02:36:29.715Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-02-28T02:36:29.716Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/proyecto-sena-77126
+[debug] [2024-02-28T02:36:30.400Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com 200
+[debug] [2024-02-28T02:36:30.400Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-02-28T02:36:30.414Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-sena-77126 [none]
+[debug] [2024-02-28T02:36:30.778Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-sena-77126 200
+[debug] [2024-02-28T02:36:30.778Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-sena-77126 {"projectId":"proyecto-sena-77126","projectNumber":"1056780930204","displayName":"Proyecto Sena","name":"projects/proyecto-sena-77126","resources":{"hostingSite":"proyecto-sena-77126","storageBucket":"proyecto-sena-77126.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_136fe2f3-5ead-4aac-8292-c85044feeacb"}
+[debug] [2024-02-28T02:40:12.800Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/proyecto-sena-77126/locations/us-central1/instances databaseId=proyecto-sena-77126-default-rtdb&validateOnly=true
+[debug] [2024-02-28T02:40:12.800Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/proyecto-sena-77126/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-02-28T02:40:13.778Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/proyecto-sena-77126/locations/us-central1/instances 200
+[debug] [2024-02-28T02:40:13.778Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/proyecto-sena-77126/locations/us-central1/instances {"name":"projects/1056780930204/locations/us-central1/instances/proyecto-sena-77126-default-rtdb","project":"projects/1056780930204","databaseUrl":"https://proyecto-sena-77126-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2024-02-28T02:40:13.781Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/proyecto-sena-77126/locations/us-central1/instances databaseId=proyecto-sena-77126-default-rtdb
+[debug] [2024-02-28T02:40:13.781Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/proyecto-sena-77126/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-02-28T02:40:14.745Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/proyecto-sena-77126/locations/us-central1/instances 200
+[debug] [2024-02-28T02:40:14.745Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/proyecto-sena-77126/locations/us-central1/instances {"name":"projects/1056780930204/locations/us-central1/instances/proyecto-sena-77126-default-rtdb","project":"projects/1056780930204","databaseUrl":"https://proyecto-sena-77126-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-02-28T03:21:36.436Z] > refreshing access token with scopes: []
+[debug] [2024-02-28T03:21:36.441Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-28T03:21:36.441Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-28T03:21:36.701Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-28T03:21:36.701Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-28T03:21:36.757Z] >>> [apiv2][query] GET https://proyecto-sena-77126-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2024-02-28T03:21:37.140Z] <<< [apiv2][status] GET https://proyecto-sena-77126-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2024-02-28T03:21:37.140Z] <<< [apiv2][body] GET https://proyecto-sena-77126-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for proyecto-sena-77126-default-rtdb have been written to firebase.rules.json. 
+[info] Future modifications to firebase.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-02-28T03:21:37.153Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firestore.googleapis.com [none]
+[debug] [2024-02-28T03:21:37.153Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firestore.googleapis.com x-goog-quota-user=projects/proyecto-sena-77126
+[debug] [2024-02-28T03:21:37.976Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firestore.googleapis.com 200
+[debug] [2024-02-28T03:21:37.977Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/firestore.googleapis.com [omitted]
+[debug] [2024-02-28T03:21:37.978Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/proyecto-sena-77126/databases/(default) [none]
+[debug] [2024-02-28T03:21:38.712Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/proyecto-sena-77126/databases/(default) 200
+[debug] [2024-02-28T03:21:38.713Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/proyecto-sena-77126/databases/(default) {"name":"projects/proyecto-sena-77126/databases/(default)","uid":"f7cf509c-efa4-49bc-9e97-f7520cc8dd3b","createTime":"2024-02-28T02:22:01.671496Z","updateTime":"2024-02-28T02:22:01.671496Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-02-28T02:22:01.671496Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IIm5x6CKzYQDML2k+euBzYQD"}
+[debug] [2024-02-28T03:21:38.713Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-02-28T03:21:38.716Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-28T03:21:38.716Z] > authorizing via signed-in user (rodriguezalejitta@gmail.com)
+[debug] [2024-02-28T03:21:38.716Z] [iam] checking project proyecto-sena-77126 for permissions ["firebase.projects.get"]
+[debug] [2024-02-28T03:21:38.718Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-sena-77126:testIamPermissions [none]
+[debug] [2024-02-28T03:21:38.719Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-sena-77126:testIamPermissions x-goog-quota-user=projects/proyecto-sena-77126
+[debug] [2024-02-28T03:21:38.719Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-sena-77126:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-28T03:21:39.223Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-sena-77126:testIamPermissions 200
+[debug] [2024-02-28T03:21:39.224Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-sena-77126:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-02-28T03:23:04.484Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/proyecto-sena-77126/releases pageSize=10&pageToken=
+[debug] [2024-02-28T03:23:04.930Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/proyecto-sena-77126/releases 200
+[debug] [2024-02-28T03:23:04.931Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/proyecto-sena-77126/releases {"releases":[{"name":"projects/proyecto-sena-77126/releases/cloud.firestore","rulesetName":"projects/proyecto-sena-77126/rulesets/c5efee07-b4f9-4a7e-981a-8cc85f0ce7c6","createTime":"2024-02-28T02:22:04.303628Z","updateTime":"2024-02-28T02:22:04.303628Z"},{"name":"projects/proyecto-sena-77126/releases/firebase.storage/proyecto-sena-77126.appspot.com","rulesetName":"projects/proyecto-sena-77126/rulesets/7c199a24-71d8-41e0-ba30-580b29d234e0","createTime":"2024-02-28T02:23:45.928833Z","updateTime":"2024-02-28T02:23:45.928833Z"}]}
+[debug] [2024-02-28T03:23:04.931Z] Found ruleset: projects/proyecto-sena-77126/rulesets/c5efee07-b4f9-4a7e-981a-8cc85f0ce7c6
+[debug] [2024-02-28T03:23:04.932Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/proyecto-sena-77126/rulesets/c5efee07-b4f9-4a7e-981a-8cc85f0ce7c6 [none]
+[debug] [2024-02-28T03:23:05.237Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/proyecto-sena-77126/rulesets/c5efee07-b4f9-4a7e-981a-8cc85f0ce7c6 200
+[debug] [2024-02-28T03:23:05.238Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/proyecto-sena-77126/rulesets/c5efee07-b4f9-4a7e-981a-8cc85f0ce7c6 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-02-28T03:25:30.478Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/proyecto-sena-77126/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-02-28T03:25:30.484Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/proyecto-sena-77126/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-02-28T03:25:31.273Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/proyecto-sena-77126/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-02-28T03:25:31.273Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/proyecto-sena-77126/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-02-28T03:25:31.782Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/proyecto-sena-77126/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-02-28T03:25:31.782Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/proyecto-sena-77126/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/proyecto-sena-77126/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-02-28T03:25:31.791Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-28T03:25:31.792Z] > authorizing via signed-in user (rodriguezalejitta@gmail.com)
+[debug] [2024-02-28T03:25:31.793Z] [iam] checking project proyecto-sena-77126 for permissions ["firebase.projects.get"]
+[debug] [2024-02-28T03:25:31.794Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-sena-77126:testIamPermissions [none]
+[debug] [2024-02-28T03:25:31.794Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-sena-77126:testIamPermissions x-goog-quota-user=projects/proyecto-sena-77126
+[debug] [2024-02-28T03:25:31.794Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-sena-77126:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-28T03:25:32.503Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-sena-77126:testIamPermissions 200
+[debug] [2024-02-28T03:25:32.503Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-sena-77126:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-28T03:25:32.505Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-02-28T03:25:32.505Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/proyecto-sena-77126
+[debug] [2024-02-28T03:25:32.514Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-02-28T03:25:32.514Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/proyecto-sena-77126
+[debug] [2024-02-28T03:25:33.231Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com 200
+[debug] [2024-02-28T03:25:33.231Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-02-28T03:25:33.232Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-02-28T03:25:33.232Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/proyecto-sena-77126
+[debug] [2024-02-28T03:25:33.240Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/runtimeconfig.googleapis.com 200
+[debug] [2024-02-28T03:25:33.240Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-02-28T03:25:34.513Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-02-28T03:25:34.514Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-02-28T03:25:44.523Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-02-28T03:25:44.524Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/proyecto-sena-77126
+[debug] [2024-02-28T03:25:45.301Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com 200
+[debug] [2024-02-28T03:25:45.301Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/proyecto-sena-77126/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2024-02-28T03:29:19.735Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-sena-77126 [none]
+[debug] [2024-02-28T03:29:20.139Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-sena-77126 200
+[debug] [2024-02-28T03:29:20.139Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-sena-77126 {"projectId":"proyecto-sena-77126","projectNumber":"1056780930204","displayName":"Proyecto Sena","name":"projects/proyecto-sena-77126","resources":{"hostingSite":"proyecto-sena-77126","realtimeDatabaseInstance":"proyecto-sena-77126-default-rtdb","storageBucket":"proyecto-sena-77126.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_136fe2f3-5ead-4aac-8292-c85044feeacb"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-02-28T03:34:35.200Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-02-28T03:34:35.334Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-02-28T03:34:35.336Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.8.0","browserURL":"https://www.gstatic.com/firebasejs/10.8.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.8.0/firebase.tgz"},"live":{"version":"10.8","browserURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.8.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.8.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.8.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.8.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.8.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\aleja 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1024207440&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-02-28T03:34:44.137Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-02-28T03:34:44.138Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-02-28T03:34:44.530Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-02-28T03:34:44.531Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-02-28T03:34:44.574Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-02-28T03:34:44.942Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-02-28T03:34:44.943Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"JULIETHRODRIGUEZ14","id":110642413,"node_id":"U_kgDOBphE7Q","avatar_url":"https://avatars.githubusercontent.com/u/110642413?v=4","gravatar_id":"","url":"https://api.github.com/users/JULIETHRODRIGUEZ14","html_url":"https://github.com/JULIETHRODRIGUEZ14","followers_url":"https://api.github.com/users/JULIETHRODRIGUEZ14/followers","following_url":"https://api.github.com/users/JULIETHRODRIGUEZ14/following{/other_user}","gists_url":"https://api.github.com/users/JULIETHRODRIGUEZ14/gists{/gist_id}","starred_url":"https://api.github.com/users/JULIETHRODRIGUEZ14/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/JULIETHRODRIGUEZ14/subscriptions","organizations_url":"https://api.github.com/users/JULIETHRODRIGUEZ14/orgs","repos_url":"https://api.github.com/users/JULIETHRODRIGUEZ14/repos","events_url":"https://api.github.com/users/JULIETHRODRIGUEZ14/events{/privacy}","received_events_url":"https://api.github.com/users/JULIETHRODRIGUEZ14/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":39,"public_gists":0,"followers":0,"following":0,"created_at":"2022-08-04T23:54:35Z","updated_at":"2024-02-22T01:33:30Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":56098,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as JULIETHRODRIGUEZ14 
+[info] 
