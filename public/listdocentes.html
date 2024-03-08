@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Estudiantes</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid"><a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="10px" width="200px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html" id="homeLink">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="./listdocentes.html" id="anuncioLink">lista docente </a></li>
+            </ul>
+            <form id="logoutForm" action="./index.html" method="post"> <!-- Formulario para cerrar sesión -->
+              <button class="salir" onclick="cerrarSesion()">Salir</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+      <section>
+      <div class="fichas-container">
+        <div class="ficha" id="ficha1">
+          <h2>Ficha 1</h2>
+          <div class="estudiantes">
+            <table>
+              <tr><th>Nombre</th><th>Grado</th></tr>
+              <tr><td>Adriana martinez</td><td> 11º</td></tr>
+              <tr><td>bella torres</td><td> 11º</td></tr>
+              <tr><td>camilo otalora</td><td> 11º</td><td</tr>
+              <tr><td>daniel marquez</td><td> 11º</td><td</tr>
+              <tr><td>emilia campos</td><td> 11º</td><td</tr>
+              <tr><td>francisca malla</td><td> 11º</td><td</tr>
+              <tr><td>gabriela bermudez</td><td> 11º</td><td</tr>
+              <tr><td>Juan Perez</td><td> 11º</td><td</tr>
+              <tr><td>karol ortiz</td><td> 11º</td><td</tr>
+            </table>
+            <button class="agrega">Agregar</button><button class="elimina">Eliminar</button><button class="edita">Editar</button>
+          </div>
+        </div>
+        
+        <div class="ficha" id="ficha2">
+          <h2>Ficha 2</h2>
+          <div class="estudiantes">   
+            <table>
+              <tr><th>Nombre</th><th>Grado</th></tr>
+              <tr><td>angela cruz</td><td> 10º</td><td</tr>
+              <tr><td>daniela martinez</td><td> 10º</td><td</tr>
+              <tr><td>maria castrilon</td><td> 10º</td></tr>
+              <tr><td>robert rodriguez</td><td> 10º</td><td</tr>
+              <tr><td>vicente manrique</td><td> 10º</td><td</tr>
+              <tr><td>hernan sanchez</td><td> 10º</td><td</tr>
+              <tr><td>milena perez</td><td> 10º</td><td</tr>
+              <tr><td>jhonatan pachon</td><td> 10º</td><td</tr>
+              <tr><td>naomi rodriguez</td><td> 10º</td><td</tr>
+            </table>
+          </div>
+          <button class="agrega">Agregar</button><button class="elimina">Eliminar</button><button class="edita">Editar</button>
+        </div>
+        <div class="ficha" id="ficha3">
+          <h2>Ficha 3</h2>
+          <div class="estudiantes">
+            <table>
+              <tr><th>Nombre</th><th>Grado</th></tr>
+              <tr><td>ana cruz</td><td> 9º</td><td</tr>
+              <tr><td>hernan castrillon</td><td> 9º</td><td</tr>
+              <tr><td>marco rodriguez</td><td>9º</td><td</tr>
+              <tr><td>sara manrique</td><td> 9º</td><td</tr>
+              <tr><td>selene rodriguez</td><td> 9º</td><td</tr>
+              <tr><td>andres manrique</td><td> 9º</td><td</tr>
+              <tr><td>erika rodriguez</td><td> 9º</td></tr>
+              <tr><td>lizzeth castrillon</td><td> 9º</td><td</tr>
+              <tr><td>jineth rodriguez</td><td> 9º</td><td</tr>
+            </table>
+          </div>
+          <button class="agrega">Agregar</button><button class="elimina">Eliminar</button><button class="edita">Editar</button>
+        </div>
+        <div class="ficha" id="ficha4">
+          <h2>Ficha 4</h2>
+          <div class="estudiantes">
+            <table>
+              <tr><th>Nombre</th><th>Grado</th></tr>
+              <tr><td>maria manrique</td><td> 8º</td><td</tr>
+              <tr><td>elkin rodriguez</td><td> 8º</td><td</tr>
+              <tr><td>ferney castrillon</td><td> 8º</td></tr>
+              <tr><td>Julieth rodriguez</td><td> 8º</td></tr>
+              <tr><td>alejandra castrillon</td><td> 8º</td><td</tr>
+              <tr><td>cristian gomez</td><td> 8º</td><td</tr>
+              <tr><td>giovanny gonzalez</td><td> 8º</td></tr>
+              <tr><td>juan carlos perez</td><td> 8º</td></tr>
+              <tr><td>michael gomez</td><td> 8º</td><td</tr>
+            </table>
+          </div>
+          <button class="agrega">Agregar</button><button class="elimina">Eliminar</button><button class="edita">Editar</button>
+        </div>
+        <div class="ficha" id="ficha5">
+          <h2>Ficha 5</h2>
+          <div class="estudiantes">
+            <table>
+              <tr><th>Nombre</th><th>Grado</th></tr>
+              <tr><td>bryan casteñano</td><td> 7º</td><td</tr>
+              <tr><td>magdalena suarez</td><td> 7º</td><td</tr>
+              <tr><td>Julian muñzo</td><td> 7º</td><td</tr>
+              <tr><td>monica canizales</td><td> 7º</td><td</tr>
+              <tr><td>lina sepulveda</td><td> 7º</td><td</tr>
+              <tr><td>angelica hernandez</td><td> 7º</td><td</tr>
+              <tr><td>nathaly amaya</td><td> 7º</td></tr>
+              <tr><td>javier castillo</td><td> 7º</td><td</tr>
+              <tr><td>juan salazar</td><td> 7º</td><td</tr>
+            </table>
+          </div>
+          <button class="agrega">Agregar</button><button class="elimina">Eliminar</button><button class="edita">Editar</button>
+        </div>
+        <div class="ficha" id="ficha6">
+          <h2>Ficha 6</h2>
+          <div class="estudiantes">
+            <table>
+              <tr><th>Nombre</th><th>Grado</th></tr>
+              <tr><td>camilo roa</td><td> 6º</td><td</tr>
+              <tr><td>jennifer otalora</td><td> 6º</td><td</tr>
+              <tr><td>dominic fernandez</td><td> 6º</td><td</tr>
+              <tr><td>tamara muñoz</td><td> 6º</td><td</tr>
+              <tr><td>alexis campos</td><td> 6º</td><td</tr>
+              <tr><td>raul gallardo</td><td> 6º</td><td</tr>
+              <tr><td>oscar jimenez</td><td> 6º</td><td</tr>
+              <tr><td>sonia de andres</td><td> 6º</td><td</tr>
+              <tr><td>karla pinto</td><td> 6º</td><td</tr>
+            </table>
+          </div>
+          <button class="agrega">Agregar</button><button class="elimina">Eliminar</button><button class="edita">Editar</button>
+        </div>
+        <div class="ficha" id="ficha7">
+          <h2>Ficha 7</h2>
+          <div class="estudiantes">
+            <table>
+              <tr><th>Nombre</th><th>Grado</th></tr>
+              <tr><td>clara martin</td><td> 5º</td></tr>
+              <tr><td>laura domingez</td><td> 5º</td></tr>
+              <tr><td>diana morales</td><td> 5º</td></tr>
+              <tr><td>guillermo rojas</td><td> 5º</td></tr>
+              <tr><td>carmen francisca</td><td> 5º</td></tr>
+              <tr><td>jose dorado</td><td> 5º</td></tr>
+              <tr><td>purpura torres</td><td> 5º</td></tr>
+              <tr><td>tomas rey</td><td> 5º</td></tr>
+              <tr><td>pedro rico</td><td> 5º</td></tr>
+            </table>
+          </div>
+          <button class="agrega">Agregar</button><button class="elimina">Eliminar</button><button class="edita">Editar</button>
+        </div>
+        <div class="ficha" id="ficha8">
+          <h2>Ficha 8</h2>
+          <div class="estudiantes">
+            <table>
+              <tr><th>Nombre</th><th>Grado</th></tr>
+              <tr><td>sofia martin</td><td> 5º</td><td</tr>
+              <tr><td>marinela domingez</td><td> 5º</td><td</tr>
+              <tr><td>eduardo morales</td><td> 5º</td><td</tr>
+              <tr><td>jhonatan rojas</td><td> 5º</td><td</tr>
+              <tr><td>cosa con ojos</td><td> 5º</td><td</tr>
+              <tr><td>jose roa</td><td> 5º</td><td</tr>
+              <tr><td>niver torres</td><td> 5º</td><td</tr>
+              <tr><td>tomas capullo</td><td> 5º</td><td</tr>
+              <tr><td>pedro pobre</td><td> 5º</td><td</tr>
+            </table>
+          </div>
+            <button class="agrega">Agregar</button><button class="elimina">Eliminar</button><button class="edita">Editar</button>
+        </div>
+    </div>
+  </section>
+<script src="js/index.js"></script>
+</body>
+</html>

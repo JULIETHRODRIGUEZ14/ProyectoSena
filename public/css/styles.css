@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: bisque;
+    }
+
+/*titulo*/
+#loginForm h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#loginForm{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#loginForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#loginForm button.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color:  #0056b3;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginForm button.btn:hover {
+    background-color: magenta;
+}
+
+/*home*/
+
+
+section h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px ;
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.salir{
+    background-color:  #0056b3;
+    color: #fff;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;/*asegura que el boton este por encima de otros elementos*/
+    border-radius: 5px;
+    padding: 8px;
+}
+button.salir:hover {
+    background-color: magenta;
+}
+
+/*index*/
+.logo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Alinea el texto al centro */
+    flex-grow: 40; /* Permite que el logo ocupe todo el espacio disponible */
+}
+
+
+/*Docente*/
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.docente {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.docente img {
+    width: 100px; /* Tamaño de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.ficha{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: calc(25% -    20px);/*ancho para tres filas por fila*/
+   margin-right: 20px;
+   padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.fichas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*estudiantes*/
+
+.fichas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6000px, 1fr)); /* Columnas autoajustables */
+    gap: 20px; /* Espacio entre las fichas */
+    padding: 20px; /* Espacio alrededor del contenedor */
+}
+
+.ficha {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff; /* Color de fondo de la ficha */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.ficha h2 {
+    margin-top: 0; /* Eliminar margen superior del título */
+}
+
+.estudiantes table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Borde colapsado */
+}
+
+.estudiantes th,
+.estudiantes td {
+    border: 1px solid #ddd; /* Borde de las celdas */
+    padding: 8px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto */
+}
+
+.ficha a {
+    display: block;
+    text-align: center;
+    margin-top: 10px; /* Espacio entre la ficha y el enlace */
+    text-decoration: none;
+    color: #007bff; /* Color del enlace */
+}
+.agrega{
+    background-color:  #0056b3;
+    color: #fff;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;/*asegura que el boton este por encima de otros elementos*/
+    border-radius: 5px;
+    padding: 8px;
+}
+button.agrega:hover {
+    background-color: magenta;
+}
+.elimina{
+    background-color:  #0056b3;
+    color: #fff;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;/*asegura que el boton este por encima de otros elementos*/
+    border-radius: 5px;
+    padding: 8px;
+}
+button.elimina:hover {
+    background-color: magenta;
+}
+.edita{
+    background-color:  #0056b3;
+    color: #fff;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;/*asegura que el boton este por encima de otros elementos*/
+    border-radius: 5px;
+    padding: 8px;
+}
+button.edita:hover {
+    background-color: magenta;
+}
+a{
+    font-size: large;
+
+}
+
+
+/*crear*/
+
+    /* Estilos personalizados para la sección "Elegir Rol" */
+    .ficha {
+        background-color: #f8f9fa; /* Color de fondo de las fichas */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        transition: transform 0.3s ease; /* Transición suave al pasar el cursor */
+    }
+
+    .ficha:hover {
+        transform: translateY(-5px); /* Efecto de levantamiento al pasar el cursor */
+    }
+
+    .ficha h3 {
+        font-size: 24px; /* Tamaño de fuente del título */
+        margin-bottom: 10px; /* Espaciado inferior del título */
+    }
+
+    .ficha p {
+        font-size: 18px; /* Tamaño de fuente del párrafo */
+        margin-bottom: 15px; /* Espaciado inferior del párrafo */
+    }
+
+    .ficha button {
+        font-size: 16px; /* Tamaño de fuente del botón */
+    }
+
+    /* Ajustar estilos en dispositivos de pantalla pequeña */
+    @media (max-width: 767px) {
+        .ficha {
+            margin-bottom: 20px; /* Espaciado inferior entre las fichas en dispositivos pequeños */
+        }
+    }
