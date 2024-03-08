@@ -237,3 +237,75 @@ function eliminarEstudiante(ficha) {
         alert('Debe ingresar un nombre de estudiante válido para eliminar.');
     }
 }
+
+/*usuario*/
+document.addEventListener("DOMContentLoaded", function() {
+    const formularioUsuario = document.getElementById("formularioUsuario");
+    const listaUsuarios = document.querySelector(".listaUsuarios");
+
+    // Array para almacenar los usuarios
+    let usuarios = [];
+
+    // Agregar usuario
+    formularioUsuario.addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita que se recargue la página al enviar el formulario
+        const nombre = document.getElementById("nombre").value;
+        const correo = document.getElementById("correo").value;
+        const telefono = document.getElementById("telefono").value;
+        const genero = document.getElementById("genero").value;
+        const tipo_documento = document.getElementById("tipo_documento").value;
+        const numero_identificacion = document.getElementById("numero_identificacion").value;
+        const password = document.getElementById("password").value;
+
+        // Crea un objeto usuario
+        const usuario = {
+            nombre,
+            correo,
+            telefono,
+            genero,
+            tipo_documento,
+            numero_identificacion,
+            password,
+            rol: "" // Inicialmente no tiene rol asignado
+        };
+
+        // Agrega el usuario al array de usuarios
+        usuarios.push(usuario);
+
+        // Limpia el formulario
+        formularioUsuario.reset();
+
+        // Muestra la lista actualizada de usuarios
+        mostrarUsuarios();
+    });
+
+    // Mostrar usuarios en la lista
+    function mostrarUsuarios() {
+        listaUsuarios.innerHTML = "";
+        usuarios.forEach((usuario, index) => {
+            const divUsuario = document.createElement("div");
+            divUsuario.innerHTML = `
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">${usuario.nombre}</h5>
+                        <p class="card-text">${usuario.correo}</p>
+                        <p class="card-text">${usuario.rol ? `Rol: ${usuario.rol}` : "Rol no asignado"}</p>
+                        <button class="btn btn-primary asignarRol" data-index="${index}">Asignar Rol</button>
+                    </div>
+                </div>
+            `;
+            listaUsuarios.appendChild(divUsuario);
+        });
+    }
+
+    // Asignar rol a un usuario
+    listaUsuarios.addEventListener("click", function(event) {
+        if (event.target.classList.contains("asignarRol")) {
+            const index = event.target.getAttribute("data-index");
+            const rol = event.target.getAttribute("data-rol");
+            usuarios[index].rol = rol;
+            mostrarUsuarios();
+        }
+    });
+});
+
